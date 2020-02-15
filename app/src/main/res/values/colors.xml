@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="colorProgress">#919190</color>
+    <color name="colorScreenBackground">#ffffff</color>
+    <color name="colorChartAxis">#A3A0A1</color>
+    <color name="colorMain">#273e52</color>
+    <color name="colorTertiary">#2c3e50</color>
+</resources>

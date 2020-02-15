@@ -1,0 +1,47 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorMain</item>
+        <item name="android:textColorTertiary">@color/colorTertiary</item>
+    </style>
+
+
+    <style name="Text" parent="TextAppearance.AppCompat" />
+
+    <style name="Text.ExtraSmall">
+        <item name="android:textSize">@dimen/textSizeExtraSmall</item>
+    </style>
+
+    <style name="Text.ExtraSmall.Primary">
+        <item name="android:textColor">@color/colorMain</item>
+    </style>
+
+    <style name="Text.Small">
+        <item name="android:textSize">@dimen/textSizeSmall</item>
+    </style>
+
+    <style name="Text.Small.Primary">
+        <item name="android:textColor">@color/colorMain</item>
+    </style>
+    
+    <style name="Text.Medium">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <style name="Text.Medium.Primary">
+        <item name="android:textColor">@color/colorMain</item>
+    </style>
+    
+    <style name="Text.Large">
+        <item name="android:textSize">@dimen/textSizeMedium</item>
+    </style>
+
+    <style name="Text.Large.Primary">
+        <item name="android:textColor">@color/colorMain</item>
+    </style>
+</resources>

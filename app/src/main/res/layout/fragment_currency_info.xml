@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorScreenBackground">
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chat_currency"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_total_supply" />
+
+
+    <ImageView
+        android:id="@+id/iv_currency_info"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:background="@drawable/ic_launcher_background" />
+
+
+    <TextView
+        android:id="@+id/tv_market_cap_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/market_cap_rank_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toEndOf="@+id/iv_currency_info"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_market_cap_change_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/mc_hange_in_24h_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toStartOf="@+id/tv_market_cap_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_market_cap_title" />
+
+    <TextView
+        android:id="@+id/tv_ath_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/all_time_high_ath_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toStartOf="@+id/tv_market_cap_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_market_cap_change_title" />
+
+    <TextView
+        android:id="@+id/tv_ath_change_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/ath_change_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toStartOf="@+id/tv_market_cap_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ath_title" />
+
+    <TextView
+        android:id="@+id/tv_cirlulating_supply_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/circulating_supply_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toStartOf="@+id/tv_market_cap_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ath_change_title" />
+
+    <TextView
+        android:id="@+id/tv_total_supply_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:text="@string/total_supply_text"
+        android:textAppearance="@style/Text.Small"
+        app:layout_constraintStart_toStartOf="@+id/tv_market_cap_title"
+        app:layout_constraintTop_toBottomOf="@+id/tv_cirlulating_supply_title" />
+
+    <TextView
+        android:id="@+id/tv_market_cap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text=""
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_market_cap_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_market_cap" />
+
+    <TextView
+        android:id="@+id/tv_ath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_market_cap_change" />
+
+    <TextView
+        android:id="@+id/tv_ath_change"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ath" />
+
+    <TextView
+        android:id="@+id/tv_circulating_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ath_change" />
+
+    <TextView
+        android:id="@+id/tv_total_supply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="16dp"
+        android:textAppearance="@style/Text.Small.Primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_circulating_supply" />
+
+    <include
+        layout="@layout/layout_progress"
+        android:id="@+id/progress_chart"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <include
+        layout="@layout/layout_retry"
+        android:id="@+id/progress_chart_error"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/chat_currency"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</android.support.constraint.ConstraintLayout>
